@@ -85,7 +85,7 @@ function App() {
         </label>
         <br />
 
-        <button className='submitbtn' type="submit">Submit</button>
+        <button className='submitbtn' type="submit">submit</button>
       </form>
     </div>
   );
