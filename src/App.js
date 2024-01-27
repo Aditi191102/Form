@@ -38,6 +38,7 @@ function App() {
           Enter your name:
           <br></br>
           <input
+          placeholder='Type here'
             type="text"
             name="name"
             value={formData.name}
@@ -50,6 +51,7 @@ function App() {
           Enter your email:
           <br></br>
           <input
+          placeholder='Type here'
             type="email"
             name="email"
             value={formData.email}
@@ -62,6 +64,7 @@ function App() {
           Enter your phone number:
           <br></br>
           <input
+          placeholder='Type here'
             type="tel"
             name="phone"
             value={formData.phone}
@@ -74,6 +77,7 @@ function App() {
           Enter your message:
           <br></br>
           <textarea
+          placeholder='Type here'
             name="message"
             value={formData.message}
             onChange={handleChange}
