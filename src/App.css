@@ -21,6 +21,8 @@ textarea {
 .submitbtn{
   width: 320px;
   height: 45px;
-  background-color: rgb(127, 127, 127);
+  background-color: black;
   color: white;
+  font-size:larger;
+  font-family: 'Times New Roman', Times, serif;
 }
