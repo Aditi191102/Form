@@ -31,63 +31,58 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className='outerdiv'>
+        <div className="App">
       <h1>Contact Form</h1>
       <form onSubmit={handleSubmit}>
-        <label>
-          Enter your name:
-          <br></br>
-          <input
+
+        <label for="name">Enter your name:</label>
+        <input
           placeholder='Type here'
             type="text"
+            id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
-          />
-        </label>
-        <br />
+        />  
 
-        <label>
-          Enter your email:
-          <br></br>
-          <input
+        <label for="email"> Enter your email:</label>
+      
+        <input
           placeholder='Type here'
             type="email"
             name="email"
+            id="email"
             value={formData.email}
             onChange={handleChange}
-          />
-        </label>
-        <br />
+        />
+        
+        
 
-        <label>
-          Enter your phone number:
-          <br></br>
-          <input
+        <label for="phone">Enter your phone number:</label>
+        <input
           placeholder='Type here'
             type="tel"
+            id="phone"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-          />
-        </label>
-        <br />
+        />
 
-        <label>
-          Enter your message:
-          <br></br>
-          <textarea
+        <label for="message">Enter your message: </label>
+        <textarea
+          id="message"
           placeholder='Type here'
             name="message"
             value={formData.message}
             onChange={handleChange}
-          />
-        </label>
-        <br />
-
+        />
+      <br></br>
         <button className='submitbtn' type="submit">Submit</button>
       </form>
     </div>
+    </div>
+    
   );
 }
 
